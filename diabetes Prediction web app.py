@@ -3,9 +3,15 @@ import numpy as np
 import pickle
 import streamlit as st
 import os
+
+# ✅ Load the trained model
 model_path = os.path.join(os.path.dirname(__file__), "trained_model.sav")
-with open(model_path, "rb") as f:
-    loaded_model = pickle.load(f)
+if os.path.exists(model_path):
+    with open(model_path, "rb") as f:
+        loaded_model = pickle.load(f)
+else:
+    st.error(f"❌ Model file not found at {model_path}")
+    st.stop()
 
 # creating function for prediction
 def diabetes_prediction(input_data):
