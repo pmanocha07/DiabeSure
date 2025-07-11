@@ -1,6 +1,6 @@
 # Diabetes Prediction Model
 
-Overview
+## Overview
 This project is a **Diabetes Prediction Model** that predicts whether a person is likely to have diabetes based on their medical parameters. The model uses machine learning techniques to analyze input data and provide predictions. The primary goal of this project is to assist in early detection and prevention of diabetes.
 
 ---
@@ -98,7 +98,7 @@ The model is trained using the [Pima Indians Diabetes Database](https://www.kagg
 
 ## Results
 The model achieved:
-- **Accuracy:** 75% (replace with actual value)
+- **Accuracy:** 85%
 ---
 
 ## Future Improvements
